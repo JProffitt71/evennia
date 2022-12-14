@@ -44,7 +44,7 @@ def hello_world(who):
 - Anything on a line after a `#` is a `comment`, ignored by Python
 ```
 
-To reiterate, the _python_path_ describes the relation between Python resources, both between and inside Python _modules_ (that is, files ending with .py).  Paths use `.` and always skips the `.py` file endings. Also, Evennia already knows to start looking for python resources inside `mygame/` so this should never be included.
+To reiterate, the _python path_ describes the relation between Python resources, both between and inside Python _modules_ (that is, files ending with .py).  Paths use `.` and always skips the `.py` file endings. Also, Evennia already knows to start looking for python resources inside `mygame/` so this should never be included.
 
     import world.test
 
@@ -150,7 +150,7 @@ as a black box.
 
 Next we have an empty `class` named `ObjectParent`. It doesn't do anything, its only code (except the docstring) is `pass` which means, well, to pass and don't do anything. Since it also doesn't _inherit_ from anything, it's just an empty container. We will not concern ourselves with it for this tutorial.
 
-The `class` named `Object`_ inherits_ from `ObjectParent` and  `DefaultObject`.  Since we see that `ObjectParent` is empty, what is interesting is `DefaultObject`. Again, the  `Object` class doesn't
+The `class` named `Object` _inherits_ from `ObjectParent` and  `DefaultObject`.  Since we see that `ObjectParent` is empty, what is interesting is `DefaultObject`. Again, the  `Object` class doesn't
 actually do anything on its own right now, but because of it being a child of `DefaultObject`, it's actually providing a lot of functionality! If this is confusing, read on.
 
 We will get back to this module in the [next lesson](./Beginner-Tutorial-Learning-Typeclasses.md). First we need to do a little detour to understand what a 'class', an 'object' or 'instance' is. These are fundamental things to understand before you can use Evennia efficiently.
