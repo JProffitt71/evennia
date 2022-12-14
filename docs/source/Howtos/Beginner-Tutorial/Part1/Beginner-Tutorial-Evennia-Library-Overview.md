@@ -93,9 +93,14 @@ We have the  `Object` class, which inherits from `DefaultObject`. Near the top o
 
 We want to figure out just what this DefaultObject offers. Since this is imported directly from `evennia`, we are actually importing from `evennia/__init__.py`.
 
-[Look at Line 160](github:evennia/__init__.py#L160) of `evennia/__init__.py` and you'll find this line:
+[Look at Line 175](github:evennia/__init__.py#L175) of `evennia/__init__.py` and you'll find these lines:
 
-    from .objects.objects import DefaultObject
+    from .objects.objects import (
+        DefaultCharacter,
+        DefaultExit,
+        DefaultObject,
+        DefaultRoom,
+    )
 
 ```{sidebar} Relative and absolute imports
 
