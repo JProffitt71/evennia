@@ -419,13 +419,13 @@ suitable targets.
 
 Let's wrap up this first Python `py` crash-course by finding someone else to send to.
 
-In Evennia's `contrib/` folder (`evennia/contrib/tutorial_examples/mirror.py`) is a handy little
+In Evennia's `contrib/` folder (`evennia/contrib/tutorials/mirror.py`) is a handy little
 object called the `TutorialMirror`. The mirror will echo whatever is being sent to it to
 the room it is in.
 
 On the game command-line, let's create a mirror:
 
-    > create/drop mirror:contrib.tutorial_examples.mirror.TutorialMirror
+    > create/drop mirror:contrib.tutorials.mirror.TutorialMirror
 
 ```{sidebar} Creating objects
 
