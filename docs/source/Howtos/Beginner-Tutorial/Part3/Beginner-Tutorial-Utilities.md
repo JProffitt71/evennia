@@ -172,7 +172,7 @@ Value: ~|y{value}|n coins{carried}
 {desc}
 
 Slots: |w{size}|n, Used from: |w{use_slot_name}|n
-Quality: |w{quality}|n, Uses: |wuses|n
+Quality: |w{quality}|n, Uses: |w{uses}|n
 Attacks using |w{attack_type_name}|n against |w{defense_type_name}|n
 Damage roll: |w{damage_roll}|n
 """.strip()
@@ -270,7 +270,7 @@ class TestUtils(BaseEvenniaTest):
             result, 
             """ 
 |ctestobj|n
-Value: ~|y10|n coins
+Value: ~|y10|n coins[Not carried]
 
 A test object
 
