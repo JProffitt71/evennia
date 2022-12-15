@@ -172,7 +172,7 @@ Finally, you can also create a new dragon using the familiar builder-commands we
 
 Fluffy is now in the room. After learning about how objects are created you'll realize that all this command really does is to parse your input, figure out that `/drop` means to "give the object the same location as the caller", and then do a call very similar to
 
-    evennia.create_object("typeclasses.monsters.Dragon", key="Cuddly", location=here)
+    evennia.create_object("typeclasses.monsters.Dragon", key="Fluffy", location=here)
 
 That's pretty much all there is to the mighty `create` command! The rest is just parsing for the command to understand just what the user wants to create. 
 
