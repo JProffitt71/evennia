@@ -303,12 +303,12 @@ need to investigate what went wrong.
 
 To run your test you need to stand inside your `mygame` folder and execute the following command:
 
-    evennia test --settings settings.py .evadventure.tests
+    evennia test --settings settings.py evadventure.tests
 
 This will run all your `evadventure` tests (if you had more of them). To only run your utility tests 
 you could do 
 
-    evennia test --settings settings.py .evadventure.tests.test_utils
+    evennia test --settings settings.py evadventure.tests.test_utils
 
 If all goes well, you should get an `OK` back. Otherwise you need to check the failure, maybe 
 your return string doesn't quite match what you expected.
