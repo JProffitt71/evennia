@@ -54,8 +54,7 @@ There are three broad sets of rules for most RPGS:
 - Regular gameplay rules - rolling dice and resolving game situations
 - Character improvement - getting and spending experience to improve the character
 
-We want our `rules` module to cover as many aspeects of what we'd otherwise would have to look up 
-in a rulebook. 
+We want our `rules` module to cover as many aspects of what we otherwise would have to look up in a rulebook. 
 
 
 ## Rolling dice 
