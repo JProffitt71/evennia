@@ -509,12 +509,12 @@ if you do, you die too.
 
 death_table = (
     ("1-2", "dead"),
-    ("3": "strength",
-    ("4": "dexterity"),
-    ("5": "constitution"),
-    ("6": "intelligence"),
-    ("7": "wisdom"),
-    ("8": "charisma"),
+    ("3", "strength"),
+    ("4", "dexterity"),
+    ("5", "constitution"),
+    ("6", "intelligence"),
+    ("7", "wisdom"),
+    ("8", "charisma"),
 )
     
     
