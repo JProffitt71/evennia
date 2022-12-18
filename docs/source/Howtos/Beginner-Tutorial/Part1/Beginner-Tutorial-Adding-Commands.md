@@ -82,7 +82,7 @@ class MyCmdSet(CmdSet):
 
 ```
 
-Our `EchoCmdSet` class must have an `at_cmdset_creation` method, named exactly like this - this is what Evennia will be looking for when setting up the cmdset later, so if you didn't set it up, it will use the parent's version, which is empty. Inside we add the command class to the cmdset by `self.add()`. If you wanted to add more commands to this CmdSet you could just add more lines of `self.add` after this.
+Our `MyCmdSet` class must have an `at_cmdset_creation` method, named exactly like this - this is what Evennia will be looking for when setting up the cmdset later, so if you didn't set it up, it will use the parent's version, which is empty. Inside we add the command class to the cmdset by `self.add()`. If you wanted to add more commands to this CmdSet you could just add more lines of `self.add` after this.
 
 Finally, let's add this command to ourselves so we can try it out. In-game you can experiment with `py` again:
 
