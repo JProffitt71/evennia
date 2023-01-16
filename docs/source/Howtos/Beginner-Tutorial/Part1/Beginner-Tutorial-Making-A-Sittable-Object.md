@@ -471,7 +471,7 @@ def sitsonthis(accessing_obj, accessed_obj, *args, **kwargs):
     """
     True if accessing_obj is sitting on/in the accessed_obj.
     """
-    return accessed_obj.db.sitting == accessing_obj
+    return accessed_obj.obj.db.sitting == accessing_obj
 
 # ...
 ```
@@ -486,7 +486,7 @@ Evennia provides a large number of default lockfuncs, such as checking permissio
 ```
 
 - `accessing_obj` is the one trying to access the lock. So us, in this case.
-- `accessed_obj` is the entity we are trying to gain a particular type of access to. So the chair.
+- `accessed_obj` is the command of the entity we are trying to gain access to. So the CmdStand object.
 - `args` is a tuple holding any arguments passed to the lockfunc. Since we use `sitsondthis()` this will be empty (and if we add anything, it will be ignored).
 - `kwargs` is a tuple of keyword arguments passed to the lockfuncs. This will be empty as well in our example.
 

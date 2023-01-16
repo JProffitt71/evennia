@@ -356,7 +356,7 @@ tests for other methods as practice. Refer to previous lessons for details.
 
 For running the tests you do: 
 
-     evennia test --settings settings.py .evadventure.tests.test_character
+    evennia test --settings settings.py evadventure.tests.test_character
 
 
 ## About races and classes 

@@ -54,8 +54,7 @@ There are three broad sets of rules for most RPGS:
 - Regular gameplay rules - rolling dice and resolving game situations
 - Character improvement - getting and spending experience to improve the character
 
-We want our `rules` module to cover as many aspeects of what we'd otherwise would have to look up 
-in a rulebook. 
+We want our `rules` module to cover as many aspects of what we otherwise would have to look up in a rulebook. 
 
 
 ## Rolling dice 
@@ -510,12 +509,12 @@ if you do, you die too.
 
 death_table = (
     ("1-2", "dead"),
-    ("3": "strength",
-    ("4": "dexterity"),
-    ("5": "constitution"),
-    ("6": "intelligence"),
-    ("7": "wisdom"),
-    ("8": "charisma"),
+    ("3", "strength"),
+    ("4", "dexterity"),
+    ("5", "constitution"),
+    ("6", "intelligence"),
+    ("7", "wisdom"),
+    ("8", "charisma"),
 )
     
     
@@ -584,15 +583,15 @@ class TestEvAdventureRuleEngine(BaseEvenniaTest):
     @patch("evadventure.rules.randint")
     def test_roll(self, mock_randint):
         mock_randint.return_value = 4 
-        self.assertEqual(self.roll_engine.roll("1d6", 4)     
-        self.assertEqual(self.roll_engine.roll("2d6", 2 * 4)     
+        self.assertEqual(self.roll_engine.roll("1d6"), 4)     
+        self.assertEqual(self.roll_engine.roll("2d6"), 2 * 4)     
         
     # test of the other rule methods below ...
 ```
 
 As before, run the specific test with 
 
-    evennia test --settings settings.py .evadventure.tests.test_rules
+    evennia test --settings settings.py evadventure.tests.test_rules
 
 ### Mocking and patching
 

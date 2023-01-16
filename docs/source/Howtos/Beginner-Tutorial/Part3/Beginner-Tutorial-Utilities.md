@@ -172,7 +172,7 @@ Value: ~|y{value}|n coins{carried}
 {desc}
 
 Slots: |w{size}|n, Used from: |w{use_slot_name}|n
-Quality: |w{quality}|n, Uses: |wuses|n
+Quality: |w{quality}|n, Uses: |w{uses}|n
 Attacks using |w{attack_type_name}|n against |w{defense_type_name}|n
 Damage roll: |w{damage_roll}|n
 """.strip()
@@ -270,7 +270,7 @@ class TestUtils(BaseEvenniaTest):
             result, 
             """ 
 |ctestobj|n
-Value: ~|y10|n coins
+Value: ~|y10|n coins[Not carried]
 
 A test object
 
@@ -303,12 +303,12 @@ need to investigate what went wrong.
 
 To run your test you need to stand inside your `mygame` folder and execute the following command:
 
-    evennia test --settings settings.py .evadventure.tests
+    evennia test --settings settings.py evadventure.tests
 
 This will run all your `evadventure` tests (if you had more of them). To only run your utility tests 
 you could do 
 
-    evennia test --settings settings.py .evadventure.tests.test_utils
+    evennia test --settings settings.py evadventure.tests.test_utils
 
 If all goes well, you should get an `OK` back. Otherwise you need to check the failure, maybe 
 your return string doesn't quite match what you expected.
