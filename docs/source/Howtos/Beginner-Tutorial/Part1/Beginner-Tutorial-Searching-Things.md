@@ -71,8 +71,11 @@ class CmdQuickFind(Command):
     def func(self):
         query = self.args.strip()
         result = self.caller.search(query)
-        if result:
-            return self.caller.msg(f"Found match for {query}: {result}")
+
+        if not result:
+            return  # Not found
+
+        self.caller.msg(f"Found match for \"{query}\": {result}")
 ```
 
 Remember, `self.caller` is the one calling the command. This is usually a Character, which
